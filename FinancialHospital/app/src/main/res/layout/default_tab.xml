@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="@dimen/_5sdp"
+    android:background="@drawable/my_shape"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/_11sdp"
+        android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/investmentFor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="#808080"
+        android:clickable="false"
+        android:focusable="false"
+        android:textSize="@dimen/_12sdp"
+        android:paddingLeft="@dimen/_4sdp"
+        android:hint="Who is this investment for?*"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_35sdp"
+        android:paddingLeft="@dimen/_4sdp"
+        android:text="is the equity one time or recurring?"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:layout_height="wrap_content">
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textSize="@dimen/_12sdp"
+             android:text="Fixed"/>
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/swOnOff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_65sdp"
+            android:textColor="#fff"
+            android:textOff="Off"
+            android:textOn="On"
+            android:textStyle="bold"
+            android:thumb="@drawable/custom_thumb"
+            app:showText="false"
+            app:track="@drawable/custom_track" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/swOnOff"
+                android:layout_marginLeft="@dimen/_53sdp"
+                android:textSize="@dimen/_12sdp"
+                android:text="Variable"/>
+
+        </RelativeLayout>
+
+    <EditText
+        android:id="@+id/DOP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="#808080"
+        android:textSize="@dimen/_12sdp"
+        android:paddingLeft="@dimen/_4sdp"
+        android:layout_marginTop="@dimen/_35sdp"
+        android:clickable="false"
+        android:editable="false"
+        android:focusable="false"
+        android:hint="Date of purchase"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="#808080"
+        android:paddingLeft="@dimen/_4sdp"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:textSize="@dimen/_12sdp"
+        android:hint="Number of units"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="#808080"
+        android:paddingLeft="@dimen/_4sdp"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:textSize="@dimen/_12sdp"
+        android:hint="Purchase price"/>
+
+    <Button
+        android:layout_width="@dimen/_115sdp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_21sdp"
+        android:paddingLeft="@dimen/_4sdp"
+        android:textColor="#fff"
+        android:background="@drawable/mybutton"
+        android:text="Add more"/>
+
+        <ImageButton
+            android:id="@+id/chatButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:outlineSpotShadowColor="#008000"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:background="@drawable/mybutton_1"
+            android:layout_gravity="right"
+            android:src="@drawable/ic_baseline_chat_24"/>
+
+    </LinearLayout>
+
+</LinearLayout>

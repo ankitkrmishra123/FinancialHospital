@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!--    <fragment-->
+    <!--        android:id="@+id/fragmentsNavigation"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="@dimen/_400sdp"-->
+    <!--        android:layout_above="@id/belowRelative"-->
+    <!--        android:name="com.exapmle.financialhospital.EmptyFragment"/>-->
+
+        <LinearLayout
+            android:id="@+id/extraPurchasableFeaturesLL"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_149sdp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/_10sdp">
+            <!--android:layout_marginTop="@dimen/_8sdp"   because banner is not on above it-->
+
+            <ImageView
+                android:id="@+id/yourInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="7"
+                android:src="@drawable/your_info" />
+
+
+            <ImageView
+                android:id="@+id/kyb"
+                android:layout_width="@dimen/_334sdp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="7"
+                android:src="@drawable/know_your_better" />
+
+
+            <ImageView
+                android:id="@+id/kyr"
+                android:layout_width="@dimen/_334sdp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="7"
+                android:src="@drawable/know_your_risk" />
+
+
+            <ImageView
+                android:id="@+id/your_family"
+                android:layout_width="@dimen/_334sdp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="7"
+                android:src="@drawable/your_family" />
+
+        </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/_44sdp"
+            android:layout_height="@dimen/_44sdp"
+            android:layout_marginRight="@dimen/_215sdp"
+            android:src="@drawable/ic_arrow_alt_circle_left_solid"/>
+
+        <ImageView
+            android:layout_width="@dimen/_44sdp"
+            android:layout_height="@dimen/_44sdp"
+            android:src="@drawable/ic_arrow_circle_right_solid"/>
+
+    </LinearLayout>
+
+    <com.etebarian.meowbottomnavigation.MeowBottomNavigation
+        android:id="@+id/customBottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:mbn_backgroundBottomColor="#ffffff"
+        app:mbn_defaultIconColor="#808080"
+        app:mbn_selectedIconColor="#ff7f7f" />
+
+</RelativeLayout>
